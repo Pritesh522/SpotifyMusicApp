@@ -177,6 +177,9 @@ event.preventDefault();
 		}
 	}
 	
+	
+	
+	
 	$('#saveChange').click(function(){
 		selGenre = $('#selectGenre option:selected').text(); 
 		year = $('#selectYear').val();
