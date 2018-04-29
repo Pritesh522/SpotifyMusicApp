@@ -16,7 +16,6 @@ $(document).ready(function () {
 		} else {
 
 			$('.back-to-top').fadeOut(duration);
-
 		}
 
 	});
@@ -70,26 +69,16 @@ $(document).ready(function () {
 				$('#selectYear').val('');
 				$('#selectGenre').text('');
 				year="";
-				selGenre="";
-
-				
-				
+				selGenre="";			
 			}
-
 		});
-
-	
 	}
 
 	// Search Button Method
 
 	$('#search').click(function () {
 				
-			
-
 		track = $('#srch-track').val();
-		
-
 			
 		if (track != '') {
 			$('html, body').animate({
@@ -100,19 +89,10 @@ $(document).ready(function () {
 			$('#error').hide();
 			year="";
 				selGenre="";
-
-			
-		
-			
-
 		} else {
 			$('#error').show();
 			$('#error').html("<div class='alert alert-danger text-center'><a href = '#'class = 'close'data - dismiss = 'alert'aria - label = 'close'></a> Field Cannot be Empty</div > ");
-
 		}
-		
-	
-
 	});
 	
 
@@ -126,7 +106,6 @@ event.preventDefault();
 		} else {
 			return false;
 		}
-
 	});
 
 	// Next Button Method
@@ -134,10 +113,8 @@ event.preventDefault();
 	$('#nxt').click(function (event) {
 event.preventDefault();
 
-
 		ofset = ofset + 5;
 		apiCall(track, selGenre,year, ofset, limit);
-
 	});
 
 	// Calculat Miliseconds to Minute and Seconds
@@ -164,7 +141,6 @@ event.preventDefault();
 	
 	function selectGenre() {
 
-
 		return $.ajax({
 
 			async: true,
@@ -181,23 +157,14 @@ event.preventDefault();
 
 			success: function (gen) {
 				var genre = genreShow(gen);
-				$('#selectGenre').html(genre);
-
-			
-				
+				$('#selectGenre').html(genre);	
 			}
-
 		});
-
-	
 	}
 	
 	$('#filter').click(function () {
 
 		selectGenre();
-
-		
-
 	});
 	function genreShow(gen) {
 		$('#selectGenre').empty();
@@ -213,6 +180,5 @@ event.preventDefault();
 	$('#saveChange').click(function(){
 		selGenre = $('#selectGenre option:selected').text(); 
 		year = $('#selectYear').val();
-	
 	});
 });
