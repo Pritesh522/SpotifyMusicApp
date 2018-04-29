@@ -1,0 +1,151 @@
+ .navbar-dark .navbar-nav .nav-item a:focus,
+ .navbar-dark .navbar-nav .nav-item a:hover {
+ 	color: #fff;
+
+ }
+
+ /* .navbar-dark .navbar-nav .a*/
+
+ .content {
+ 	height: 600px;
+ 	background-color: #21e9a0;
+ 	display: block;
+ 	margin-top: 68.33px;
+ 	overflow: auto;
+ }
+
+ .container.center-music {
+ 	margin-top: 100px;
+ }
+
+ .clearfix::after {
+ 	content: "";
+ 	clear: both;
+ 	display: table;
+ }
+
+ .musi {
+ 	font-size: 90px;
+ 	/*	margin-top: 50px;*/
+ 	font-weight: 700;
+ 	color: white;
+ 	letter-spacing: 1px;
+ }
+
+ .demo {
+ 	font-size: 30px;
+ 	color: white;
+ 	letter-spacing: 1px;
+
+ }
+
+ .btngroup {
+ 	margin-top: 20px;
+ }
+
+ .btn.mybtn {
+ 	background-color: white;
+ 	border-color: white;
+ 	padding: 10px 30px;
+ }
+
+ .btn.mybtn:active {
+ 	background-color: #343a40;
+ 	color: white;
+ 	border-color: #343a40;
+ }
+
+ .btn.mybtn:focus,
+ .btn.mybtn:hover {
+ 	background-color: #343a40;
+ 	color: white;
+ 	border-color: #343a40;
+ }
+
+ /*.btn.mybtn:hover{
+	background-color: gray;
+	color: white;
+	border-color: gray;
+}*/
+
+ .mytable {
+ 	margin-top: 50px;
+ }
+
+ .mytable .table th,tr,td{
+ 	text-align: center;
+ }
+#table td{
+	height: 70px;
+	width: 70px;
+	vertical-align: middle;
+	text-align: center
+}
+
+ .fa-caret-up {
+ 	margin: 0 10px;
+	
+ }
+.back-to-top {
+ 
+background: none;
+ 
+margin: 0;
+ 
+position: fixed;
+ 
+bottom: 0;
+ 
+right: 0;
+ 
+width: 70px;
+ 
+z-index: 100;
+ 
+display: none;
+ 
+text-decoration: none;
+ 
+color: #343a40;
+ 
+
+}
+ 
+a.back-to-top:hover{
+	color: gray;
+} 
+.arrow{
+	color: #343a40
+}
+a .arrow:hover{
+	color: gray
+}
+h3{letter-spacing: 1px}
+
+.ncolor{
+	color:#21e9a0;
+/*font-size: px;*/
+	font-weight: 400
+}
+.logocolor{
+	color: #fff;
+/*	width: 100px*/
+	
+}
+
+
+.table .thead-dark th {
+/*    color: #fff;*/
+/*    background-color: #212529;*/
+     border-color: #fff !important; 
+ 
+}
+table[data-sortable].sortable-theme-bootstrap thead th {
+    border-bottom: 0px solid #e0e0e0 !important;
+}
+
+.footer-bottom{
+  background: #212529;
+  padding: 2em;
+	color: white;
+}
