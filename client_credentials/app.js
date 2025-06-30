@@ -6,7 +6,7 @@
  * For more information, read
  * https://developer.spotify.com/web-api/authorization-guide/#client_credentials_flow
  */
-
+// Test Connection
 var request = require('request'); // "Request" library
 
 var client_id = 'd3b8561a008849e8be04b3c98a5dd03c'; // Your client id
